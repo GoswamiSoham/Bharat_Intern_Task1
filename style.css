@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Arimo', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    background-color: #04294e3c;
+}
+nav h3{
+    font-size: 30px;
+    color:#000000;
+}
+nav ul {
+    display:flex;
+    gap:30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #0f0000;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background: #31011e;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.container{ 
+    height: 100vh;
+    width: 100vw;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    /* border: 2px solid black; */
+}
+.row .left-side h3{
+    font-size: 30px;
+    font-weight: 400;
+    color:#555353;
+}
+.row .left-side h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.row .left-side h4{
+    font-size: 30px;
+    font-weight: 500;
+    color:#494848;
+}
+.row .left-side .button{
+    margin-top: 30px;
+    display: flex;
+    gap:30px;
+}
+.row .left-side  a{
+    font-size:16px;
+    text-decoration: none;
+    color:#000;
+    padding: 15px 30px;
+    background-color: #ff004f;
+    margin-top: 0px;
+    border:none;
+    border-radius: 30px;
+    font-weight: 400;
+    transition: all 0.5s ease 0s;
+    color:#fff;
+}
+.row .left-side a:hover{
+    cursor: pointer;
+    /* background-image: linear-gradient(to bottom left, #62d9ee,#bfb3b3); */
+    background-color: #efaec3;
+    box-shadow: inset 2px 2px 4px black;
+    color: #fff;
+}
+.row .right-side img{
+    width:400px;
+    height:400px;
+    border-radius: 50%;
+    border: 5px solid #ff004f;
+    transition: 0.5s;
+}
+.row .right-side img:hover{
+    transform: scale(1.03);
+}
+/* -----------------For about----------------------- */
+
+
+@media (max-width:830px) {
+    .row{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+}
