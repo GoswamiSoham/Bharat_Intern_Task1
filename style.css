@@ -5,6 +5,9 @@
     /* font-family: 'Arimo', sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior:smooth;
+  }
 body{
     overflow-x: hidden;
 }
@@ -12,13 +15,14 @@ header{
     width: 100vw;
 }
 nav{
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
     width: 100%;
     height: 50px;
-    background-color: #f10650d2;
+    background-color:#d5aeb8a8;
     position: fixed;
     top:0;
     backdrop-filter:blur(5px);
@@ -26,7 +30,7 @@ nav{
 }
 nav h3{
     font-size: 30px;
-    color:#fff;
+    color:#000000
 }
 nav ul {
     display:flex;
@@ -37,7 +41,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color:#fff;
+    color:#000000;
     font-size: 20px;
     position: relative;
 
@@ -119,7 +123,7 @@ nav ul li a:hover::after{
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 2%;
+    margin-top: 5%;
     gap:50px;
     height:500px;
     
@@ -128,7 +132,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
   background-color: #ff004f;
   border-radius: 30px;
-  
+  margin-top: 15%;
   
 }
 .about-col-2{
@@ -136,6 +140,9 @@ nav ul li a:hover::after{
     flex-direction: column;
     align-items:flex-start;
 
+}
+#intro{
+    font-size: 18px;
 }
 .tab-titles{
     display: flex;
@@ -176,6 +183,7 @@ nav ul li a:hover::after{
     list-style: none;
     
 }
+
 .tab-contents ul li div{
     color:#80022a;
     font-size: 14px;
@@ -202,6 +210,9 @@ nav ul li a:hover::after{
     gap:20px;
     flex-wrap: wrap;
 }
+.tab-contents span{
+    color:#ff004f;
+}
 /* ----------------------contact me------------------------------ */
 .contact-me{
     margin-top: 50px;
@@ -209,6 +220,7 @@ nav ul li a:hover::after{
     justify-content:space-around;
     padding: 0 10%;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 .social{
     display: flex;
@@ -247,7 +259,7 @@ nav ul li a:hover::after{
 }
 .contact-form{
     flex-basis: 50%;
-    margin-bottom: 10%;
+    
 }
 .contact-form form{
     display: flex;
@@ -287,14 +299,17 @@ nav ul li a:hover::after{
     cursor: pointer;
     background-color: #31011e;
 }
+.foot{
+    width: 100vw;
+}
 .footer{
-    position: fixed;
-    bottom: 0%;
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 100%;
+   
     background-color: #380314;
     color:#fda1be;
 }
@@ -316,9 +331,28 @@ nav ul li a:hover::after{
   ::-webkit-scrollbar-thumb:hover {
     background: #ff0000;
   } 
-@media (max-width:830px) {
+/* @media (max-width:830px) {
     .row{
         display:flex;
         flex-direction: column-reverse;
     }
+    .container{ 
+        display: flex;
+        flex-direction: column;
+        
+        height: 100vh;
+        width: 100vw;
+    }
 }
+@media (max-width:490px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   .container{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #e40000;
+   }
+} */
