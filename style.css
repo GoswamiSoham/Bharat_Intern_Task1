@@ -207,7 +207,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul{
     display: flex;
-    gap:20px;
+    gap:8px;
     flex-wrap: wrap;
 }
 .tab-contents span{
@@ -316,6 +316,9 @@ nav ul li a:hover::after{
 .contactMe{
     margin-left: 10%;
 }
+#exp ul li{
+    list-style:disc;
+}
 ::-webkit-scrollbar {
     width: 8px;
     
@@ -331,6 +334,7 @@ nav ul li a:hover::after{
   ::-webkit-scrollbar-thumb:hover {
     background: #ff0000;
   } 
+
 /* @media (max-width:830px) {
     .row{
         display:flex;
